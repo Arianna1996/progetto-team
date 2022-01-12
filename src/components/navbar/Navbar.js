@@ -4,10 +4,14 @@ const Navbar = () => {
   return (
     <div className={styles["navbar-container"]}>
       <div className={styles["user-info"]}>
-        <img src="../assets/avatar-header.svg" />
-        <h3>Francesco Totti</h3>
+        <div>
+          <img src="../assets/avatar-header.svg" />
+          <h3>Francesco Totti</h3>
+        </div>
+
         <div>
           <button>Roma</button>
+          <div className={styles.divisor}></div>
         </div>
       </div>
       <div className={styles["info-table"]}>

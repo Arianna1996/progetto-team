@@ -5,13 +5,28 @@
   width: calc(100vw - 4%);
   height: 3.5rem;
   align-items: center;
-  padding: 0 2rem;
+  padding: 2rem 2rem;
+  position: relative;
+  border-bottom-left-radius: 20px;
 }
 
 .user-info {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  width: 18rem;
 }
+
+.user-info div:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+
+.user-info div:nth-child(2) {
+  display: flex;
+  align-items: center;
+}
+
 .info-table {
   display: flex;
   align-items: center;
@@ -22,17 +37,81 @@
 }
 
 .user-info img {
-  width: 3rem;
+  width: 2rem;
+  margin-right: 10px;
 }
 
 h3 {
-  margin: 0px 1rem;
+  /* margin: 0px 1rem; */
+  color: white;
 }
 
 .user-info button {
-  padding: 2px 1rem;
+  padding: 4px 1rem;
   border-radius: 12px;
   background-color: rgb(248, 153, 10);
   color: white;
   border: none;
+}
+
+.info-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-details p {
+  font-size: 12px;
+  color: #ccc;
+  font-weight: 600;
+}
+
+.info-details h3 {
+  font-size: 18px;
+}
+
+.divisor {
+  height: 45px;
+  width: 6px;
+  background-color: rgba(255, 255, 255, 0.171);
+  position: absolute;
+  left: 430px;
+}
+
+.search input {
+  background-color: rgba(255, 255, 255, 0.171);
+  border: none;
+  padding: 6px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.search input::placeholder {
+  color: rgba(255, 255, 255, 0.363);
+  font-size: 10px;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search button {
+  padding: 8px 35px;
+  border-radius: 5px;
+  border: none;
+  background-color: #0071bc;
+  color: white;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 10px;
+}
+
+.hour {
+  color: white;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10rem;
 }

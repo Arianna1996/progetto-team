@@ -12,3 +12,27 @@
   display: flex;
   align-items: center;
 }
+.info-table {
+  display: flex;
+  align-items: center;
+}
+
+.info-notification img {
+  margin-left: 20px;
+}
+
+.user-info img {
+  width: 3rem;
+}
+
+h3 {
+  margin: 0px 1rem;
+}
+
+.user-info button {
+  padding: 2px 1rem;
+  border-radius: 12px;
+  background-color: rgb(248, 153, 10);
+  color: white;
+  border: none;
+}

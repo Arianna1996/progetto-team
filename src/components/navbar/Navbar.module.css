@@ -6,8 +6,10 @@
   height: 3.5rem;
   align-items: center;
   padding: 2rem 2rem;
-  position: relative;
+  position: absolute;
   border-bottom-left-radius: 20px;
+  top: 0;
+  right: 0;
 }
 
 .user-info {
@@ -41,7 +43,7 @@
   margin-right: 10px;
 }
 
-h3 {
+.navbar-container h3 {
   /* margin: 0px 1rem; */
   color: white;
 }

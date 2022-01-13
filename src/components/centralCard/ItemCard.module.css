@@ -1,16 +1,17 @@
 .card {
-  height: 11rem;
+  height: 13rem;
   background-image: url("./bg-card.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-color: salmon;
   background-position: center;
-  width: 40%;
+  width: 90%;
   display: flex;
   flex-direction: column;
   border-radius: 25px;
   /* margin-left: 2rem; */
   padding: 0.5rem 1.2rem;
+  margin-bottom: 2rem;
 }
 
 .cardItem {

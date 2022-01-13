@@ -29,6 +29,7 @@
   padding: 0 2rem;
   font-size: 1rem;
   color: #aeb0b3;
+  transition: 0.3s ease-in-out;
 }
 
 .buttonContainer button:first-child {
@@ -53,18 +54,24 @@
   width: 100%;
   justify-content: space-between;
   padding: 2rem;
+  padding-bottom: 1rem;
 }
 
 .overflow {
   overflow-y: scroll;
-  height: 87%;
+  max-height: 87%;
   right: 30%;
   top: 103px;
   z-index: 0;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   gap: 1rem;
   align-items: flex-start;
+ */
   padding-left: 3rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 53rem;
 }

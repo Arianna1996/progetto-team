@@ -1,0 +1,22 @@
+.template-item {
+  width: 7rem;
+  height: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background-color: #444758;
+  padding: 1rem;
+}
+
+.template-item img {
+  background-color: transparent !important;
+  padding: 2px;
+  margin-bottom: 3px;
+}
+
+.template-item h6 {
+  text-align: center;
+  color: #7f8188;
+}

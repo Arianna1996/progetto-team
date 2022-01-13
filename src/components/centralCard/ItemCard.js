@@ -1,16 +1,17 @@
 import styles from "./ItemCard.module.css";
 
-const ItemCard = () => {
+const ItemCard = (props) => {
   return (
-    <div className={styles.card}>
+    <div className={styles.card} style={{ backgroundColor: props.color }}>
       <div className={styles.cardItem}>
-        <img src="../assets/documents.svg" />
-        <p>Documento</p>
+        <img src={`/assets/${props.icon}.svg`} />
+        <p>{props.category}</p>
       </div>
       <div className={styles.mainItem}>
-        <h3>Carta D'Identità</h3>
+        <h3>{props.name}</h3>
       </div>
     </div>
   );
 };
+
 export default ItemCard;

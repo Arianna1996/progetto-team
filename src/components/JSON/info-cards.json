@@ -1,0 +1,116 @@
+{
+  "data": {
+    "info-cards": [
+      {
+        "id": 1,
+        "name": "Carta d'identità",
+        "template": "Documento",
+        "category": {
+          "id": 1,
+          "name": "Documenti",
+          "colour": "#1872b7",
+          "icon": "documents"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Codice Fiscale",
+        "template": "Documento",
+        "category": {
+          "id": 1,
+          "name": "Documenti",
+          "colour": "#1872b7",
+          "icon": "documents"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Facebook",
+        "template": "Account Social",
+        "category": {
+          "id": 2,
+          "name": "Accounts",
+          "colour": "#b71533",
+          "icon": "accounts"
+        }
+      },
+      {
+        "id": 4,
+        "name": "VISA",
+        "template": "Carta di credito",
+        "category": {
+          "id": 3,
+          "name": "Pagamenti",
+          "colour": "#2fb7a3",
+          "icon": "payments"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Patente B",
+        "template": "Documento",
+        "category": {
+          "id": 1,
+          "name": "Documenti",
+          "colour": "#1872b7",
+          "icon": "documents"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Twitter",
+        "template": "Account Social",
+        "category": {
+          "id": 2,
+          "name": "Accounts",
+          "colour": "#b71533",
+          "icon": "accounts"
+        }
+      },
+      {
+        "id": 7,
+        "name": "American Express",
+        "template": "Carta di Credito",
+        "category": {
+          "id": 3,
+          "name": "Pagamenti",
+          "colour": "#2fb7a3",
+          "icon": "payments"
+        }
+      },
+      {
+        "id": 8,
+        "name": "Gmail",
+        "template": "Account Email",
+        "category": {
+          "id": 2,
+          "name": "Accounts",
+          "colour": "#b71533",
+          "icon": "accounts"
+        }
+      },
+      {
+        "id": 9,
+        "name": "Master Card",
+        "template": "Carta di Credito",
+        "category": {
+          "id": 3,
+          "name": "Pagamenti",
+          "colour": "#2fb7a3",
+          "icon": "payments"
+        }
+      },
+      {
+        "id": 10,
+        "name": "Poste Pay",
+        "template": "Carta di Credito",
+        "category": {
+          "id": 3,
+          "name": "Pagamenti",
+          "colour": "#2fb7a3",
+          "icon": "payments"
+        }
+      }
+    ]
+  }
+}

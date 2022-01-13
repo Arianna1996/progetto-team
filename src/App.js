@@ -2,6 +2,7 @@ import "./App.css";
 import CentralCard from "./components/centralCard/CentralCard";
 import Navbar from "./components/navbar/Navbar";
 import Sidebar from "./components/sidebar/Sidebar";
+import Template from "./components/template/Template";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Sidebar />
       <Navbar />
       <CentralCard />
+      <Template />
     </div>
   );
 }

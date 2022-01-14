@@ -4,10 +4,13 @@ const Button = (props) => {
     props.click(event.target.value);
   };
 
+  const modalHandler = (props) => {
+    console.log(props.show);
+  };
   return (
     <button
       className={styles.itemButton}
-      onClick={clickHandler}
+      onClick={props.show ? modalHandler : clickHandler}
       value={props.value}
     >
       {props.children}

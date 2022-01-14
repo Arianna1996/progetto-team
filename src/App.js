@@ -19,8 +19,12 @@ function App() {
       {showModal ? (
         <div className="overlay" onClick={modalHandler}>
           <div className="modal">
-            <Button test={modalHandler}>Ok</Button>
-            <Button test={modalHandler}>Cancella</Button>
+            <Button test={modalHandler} show={showModal}>
+              Ok
+            </Button>
+            <Button test={modalHandler} show={showModal}>
+              Cancella
+            </Button>
           </div>
         </div>
       ) : (
@@ -29,7 +33,7 @@ function App() {
       <Sidebar />
       <Navbar />
       <CentralCard />
-      <Template click={modalHandler} />
+      <Template onModalShow={modalHandler} />
     </div>
   );
 }

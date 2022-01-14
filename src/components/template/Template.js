@@ -17,77 +17,77 @@ const Template = (props) => {
       </div>
       <div className={styles.templateItemContainer}>
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />
         <TemplateItem
-          onClick={props.click}
+          onClick={props.onModalShow}
           image="add"
           text="Aggiungi Template"
         />

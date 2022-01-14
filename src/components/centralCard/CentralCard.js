@@ -98,26 +98,28 @@ const CentralCard = () => {
       </div>
 
       <div className={styles.itemContainer}>
-        <div className={styles.description}>
-          <h2>{category}</h2>
-          <img
-            onClick={DropDownHandler}
-            src={`../assets/${show ? "close-outline" : "more"}.svg`}
-          />
-          <DropDown show={show} />
-        </div>
-        <div className={styles.overflow}>
-          {finalCards.map((card) => {
-            return (
-              <ItemCard
-                key={card.id}
-                name={card.name}
-                color={card.category.colour}
-                icon={card.category.icon}
-                category={card.category.name}
-              />
-            );
-          })}
+        <div className={styles.bar}>
+          <div className={styles.description}>
+            <h2>{category}</h2>
+            <img
+              onClick={DropDownHandler}
+              src={`../assets/${show ? "close-outline" : "more"}.svg`}
+            />
+            <DropDown show={show} />
+          </div>
+          <div className={styles.overflow}>
+            {finalCards.map((card) => {
+              return (
+                <ItemCard
+                  key={card.id}
+                  name={card.name}
+                  color={card.category.colour}
+                  icon={card.category.icon}
+                  category={card.category.name}
+                />
+              );
+            })}
+          </div>
         </div>
       </div>
     </div>

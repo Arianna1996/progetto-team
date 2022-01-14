@@ -23,13 +23,12 @@
 
 .description img {
   z-index: 5;
+  margin-right: 5%;
 }
 .description img:hover {
   cursor: pointer;
 }
 .overflow {
-  overflow-y: scroll;
-  max-height: 87%;
   right: 30%;
   top: 103px;
   z-index: 0;
@@ -45,11 +44,16 @@
   grid-template-columns: 1fr 1fr;
   width: 53rem;
 }
+.bar {
+  overflow-y: scroll;
+  max-height: 100%;
+  width: 105%;
+}
 
 .buttonContainer {
   display: flex;
   flex-direction: column;
   margin-left: 2rem;
-  padding-top: 10px;
+  padding-top: 2rem;
   z-index: 1;
 }

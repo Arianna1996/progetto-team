@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css";
+import Button from "../centralCard/Button";
 
 const Navbar = () => {
   return (

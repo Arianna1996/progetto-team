@@ -4,6 +4,9 @@ import Data from "../JSON/info-cards.json";
 
 import styles from "./CentralCard.module.css";
 import Button from "./Button";
+
+import _ from "lodash";
+
 const CentralCard = () => {
   const [category, setCategory] = useState("Tutte");
 
@@ -57,24 +60,27 @@ const CentralCard = () => {
     icon: results.category.icon,
   }));
 
+  /* SCUSA ARI MA COSI HO ELIMINATO 2 MAP E MI SEMBRA MOLTO PIU SEMPLICE DA CAPIRE
+  
   const obButton = Array.from(new Set(obCategory.map((a) => a.id))).map(
     (id) => {
-      return obCategory.find((a) => a.id === id);
+      return obCategory.find((a) => a.id === id);                                 
     }
-  );
+  ); */
 
+  const buttonMadeByUniqBy = _.uniqBy(obCategory, "text");
+  console.log(obCategory);
   return (
     <div className={styles.cardContainer}>
       <div className={styles.buttonContainer}>
         <Button value="Tutte" click={clickHandler}>
           Tutte
         </Button>
-        {obButton.map((button, index) => {
+        {buttonMadeByUniqBy.map((button, index) => {
           return (
             <Button key={index} click={clickHandler} value={button.text}>
               <img src={`../assets/${button.icon}.svg`} alt="" />
               {button.text}
-              {console.log(obButton)}
             </Button>
           );
         })}

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import ItemCard from "./ItemCard";
 import Data from "../JSON/info-cards.json";
+import DropDown from "./DropDown";
 
 import styles from "./CentralCard.module.css";
 import Button from "./Button";
@@ -9,6 +10,11 @@ import _ from "lodash";
 
 const CentralCard = () => {
   const [category, setCategory] = useState("Tutte");
+  const [show, setShow] = useState(false);
+
+  const DropDownHandler = () => {
+    setShow(!show);
+  };
 
   const clickHandler = (category) => {
     setCategory(category);
@@ -69,7 +75,7 @@ const CentralCard = () => {
   ); */
 
   const buttonMadeByUniqBy = _.uniqBy(obCategory, "text");
-  console.log(obCategory);
+
   return (
     <div className={styles.cardContainer}>
       <div className={styles.buttonContainer}>
@@ -78,7 +84,12 @@ const CentralCard = () => {
         </Button>
         {buttonMadeByUniqBy.map((button, index) => {
           return (
-            <Button key={index} click={clickHandler} value={button.text}>
+            <Button
+              key={index}
+              click={clickHandler}
+              value={button.text}
+              category={category}
+            >
               <img src={`../assets/${button.icon}.svg`} alt="" />
               {button.text}
             </Button>
@@ -89,7 +100,11 @@ const CentralCard = () => {
       <div className={styles.itemContainer}>
         <div className={styles.description}>
           <h2>{category}</h2>
-          <img src="../assets/more.svg" />
+          <img
+            onClick={DropDownHandler}
+            src={`../assets/${show ? "close-outline" : "more"}.svg`}
+          />
+          <DropDown show={show} />
         </div>
         <div className={styles.overflow}>
           {finalCards.map((card) => {

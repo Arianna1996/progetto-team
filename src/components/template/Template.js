@@ -1,7 +1,7 @@
 import styles from "./Template.module.css";
 /* import image from "../assets/add.svg"; */
 import TemplateItem from "./TemplateItem";
-const Template = () => {
+const Template = (props) => {
   return (
     <div className={styles["template-container"]}>
       <div className={styles["template-header"]}>
@@ -16,22 +16,81 @@ const Template = () => {
         <input type="search" placeholder="Ricerca template" />
       </div>
       <div className={styles.templateItemContainer}>
-        <TemplateItem image="add" text="Aggiungi Template" />
-
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
-        <TemplateItem image="add" text="Aggiungi Template" />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
+        <TemplateItem
+          onClick={props.click}
+          image="add"
+          text="Aggiungi Template"
+        />
       </div>
     </div>
   );

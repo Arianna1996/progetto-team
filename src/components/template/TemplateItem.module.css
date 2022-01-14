@@ -8,6 +8,7 @@
   border-radius: 12px;
   background-color: #444758;
   padding: 1rem;
+  transition: 500ms ease-in-out;
 }
 
 .template-item img {
@@ -19,4 +20,9 @@
 .template-item h6 {
   text-align: center;
   color: #7f8188;
+}
+
+.template-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }

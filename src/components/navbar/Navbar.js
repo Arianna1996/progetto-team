@@ -1,5 +1,6 @@
 import styles from "./Navbar.module.css";
-import Button from "../centralCard/Button";
+
+import Clock from "./Clock";
 
 const Navbar = () => {
   return (
@@ -29,7 +30,7 @@ const Navbar = () => {
         <button>Cerca</button>
       </div>
       <div className={styles.hour}>
-        <p>09:41</p>
+        <Clock />
       </div>
       <div className={styles.settings}>
         <img src="../assets/gear.svg" />

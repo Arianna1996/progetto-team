@@ -75,13 +75,15 @@ const CentralCard = (props) => {
   ); */
 
   const buttonMadeByUniqBy = _.uniqBy(obCategory, "text");
+  buttonMadeByUniqBy.unshift({
+    id: 0,
+    text: "Tutte",
+    icon: "",
+  });
 
   return (
     <div className={styles.cardContainer}>
       <div className={styles.buttonContainer}>
-        <Button value="Tutte" click={clickHandler}>
-          Tutte
-        </Button>
         {buttonMadeByUniqBy.map((button, index) => {
           return (
             <Button
@@ -89,7 +91,9 @@ const CentralCard = (props) => {
               click={clickHandler}
               value={button.text}
               category={category}
+              id={index}
             >
+              {console.log(index)}
               <img src={`../assets/${button.icon}.svg`} alt="" />
               {button.text}
             </Button>

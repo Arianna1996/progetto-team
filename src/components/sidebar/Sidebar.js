@@ -38,19 +38,19 @@ const Sidebar = (props) => {
         <p>Operatore</p>
       </div>
       <div className={styles["second-item"]}>
-        {arrayImg.map((img, i) => {
+        {arrayImg.map((img, idx) => {
           return (
             <img
-              key={i}
+              key={idx}
               src={`../assets/${img}.svg`}
               id={img}
               // onClick={imageClickHandler}
               onClick={(takeEvent) => {
                 imageClickHandler(takeEvent);
-                handleClick(i);
+                handleClick(idx);
               }}
               style={{
-                filter: i === index ? filteredColor : "none",
+                filter: idx === index ? filteredColor : "none",
               }}
             />
           );

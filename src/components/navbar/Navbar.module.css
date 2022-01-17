@@ -90,7 +90,7 @@
 
 .search input::placeholder {
   color: rgba(255, 255, 255, 0.363);
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .search input:focus {
@@ -105,7 +105,7 @@
   color: white;
   margin-left: 20px;
   font-weight: 600;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .hour {

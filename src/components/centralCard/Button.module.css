@@ -21,13 +21,13 @@ button:first-child {
   justify-content: flex-end;
 }
 
-button:focus {
-  background-color: #0071bc;
-  color: #fff;
-}
 button:hover {
   cursor: pointer;
 }
 button:focus img {
   filter: brightness(100);
+}
+.active {
+  background-color: #0071bc;
+  color: #fff;
 }

@@ -8,11 +8,33 @@ import Button from "./components/centralCard/Button";
 
 function App() {
   const [showModal, setShowModal] = useState(false);
+  const [changeContent, setChangeContent] = useState();
 
   const modalHandler = () => {
     setShowModal(!showModal);
     console.log("Hai Cliccato");
   };
+
+  const iconHandler = (iconId) => {
+    setChangeContent(iconId);
+    console.log(changeContent);
+  };
+
+  let content;
+
+  if (changeContent === "speedometer") {
+    content = <div className="mainContent">Speedometer</div>;
+  } else if (changeContent === "diary") {
+    content = <div className="mainContent">Diary</div>;
+  } else if (changeContent === "focus") {
+    content = <div className="mainContent">Focus</div>;
+  } else if (changeContent === "calendar") {
+    content = <div className="mainContent">Calendar</div>;
+  } else if (changeContent === "chevron-left-solid") {
+    content = <CentralCard />;
+  } else {
+    content = <CentralCard />;
+  }
 
   return (
     <div className="App">
@@ -30,9 +52,9 @@ function App() {
       ) : (
         ""
       )}
-      <Sidebar />
+      <Sidebar onIconClick={iconHandler} />
       <Navbar />
-      <CentralCard />
+      {content}
       <Template onModalShow={modalHandler} />
     </div>
   );

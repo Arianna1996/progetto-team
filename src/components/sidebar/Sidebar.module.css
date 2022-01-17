@@ -43,3 +43,7 @@ img {
 .arrow {
   width: 20px;
 }
+
+.second-item img:hover {
+  cursor: pointer;
+}

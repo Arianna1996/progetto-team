@@ -69,3 +69,17 @@
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.mainContent {
+  margin-top: 100px;
+  margin-left: 4rem;
+  background-color: #fff;
+  width: 70rem;
+  display: flex;
+  /* padding: 1rem 2rem 0 0; */
+  border-radius: 20px 20px 0 0;
+  height: calc(100vh - 6.69rem);
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}

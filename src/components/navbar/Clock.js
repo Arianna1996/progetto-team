@@ -9,7 +9,7 @@ const Clock = () => {
     }, 1000);
   });
 
-  return <p>{date}</p>;
+  return <p style={{ width: "1rem" }}>{date}</p>;
 };
 
 export default Clock;

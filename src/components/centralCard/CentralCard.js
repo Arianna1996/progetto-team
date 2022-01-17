@@ -8,7 +8,7 @@ import Button from "./Button";
 
 import _ from "lodash";
 
-const CentralCard = () => {
+const CentralCard = (props) => {
   const [category, setCategory] = useState("Tutte");
   const [show, setShow] = useState(false);
 
@@ -107,6 +107,7 @@ const CentralCard = () => {
             />
             <DropDown show={show} />
           </div>
+
           <div className={styles.overflow}>
             {finalCards.map((card) => {
               return (
